@@ -376,10 +376,11 @@ class IntergratedStartegy(bt.Strategy):
 
 def start_backtesting():
     # Update bktest data.
+    # Information to be filled by you.    
     mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="Ferris616619@@")
+        host="XXXXXXX",
+        user="XXXXXXX",
+        password="XXXXXXX")
     mycursor = mydb.cursor()
     mycursor.callproc("ib_bktest.accum_data")
     mycursor.close()
